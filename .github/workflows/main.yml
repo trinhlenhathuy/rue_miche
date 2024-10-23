@@ -19,13 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.x'  # Chọn phiên bản Python mà bạn muốn sử dụng
 
     - name: Install dependencies
       run: |
-        cd path/to/your/directory  # Chuyển đến thư mục chứa requirements.txt (nếu cần)
-        pip install -r requirements.txt  # Cài đặt các thư viện
+        pip install -r requirements.txt  # Cài đặt các thư viện từ requirements.txt
 
     - name: Run tests
       run: |
-        pytest
+        pytest  # Chạy test, nếu bạn có viết test cho mã của mình
