@@ -14,16 +14,17 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # Cập nhật ở đây
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4  # Cập nhật ở đây
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        cd path/to/your/directory  # Chuyển đến thư mục chứa requirements.txt (nếu cần)
+        pip install -r requirements.txt  # Cài đặt các thư viện
 
     - name: Run tests
       run: |
