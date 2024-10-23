@@ -27,4 +27,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest  # Chạy test, nếu bạn có viết test cho mã của mình
+        python -m pytest  # Sử dụng python -m để chạy pytest
